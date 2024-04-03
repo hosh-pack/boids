@@ -4,20 +4,8 @@
   margin: 0;
 }
 
-.dot {
-  position: absolute;
-  background-color: red;
-  height: 5px;
-  width: 5px;
-  border-radius: 50%;
-}
-
-#background {
-  width: 100dvw;
-  height: 100dvh;
-  background-color: black;
-}
-
 body {
   overflow: hidden;
+  background-color: black;
+  cursor: url('Result.svg'), auto;
 }
