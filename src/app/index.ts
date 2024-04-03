@@ -56,6 +56,7 @@ const draw = (timeStamp: DOMHighResTimeStamp) => {
   // Move and draw each bot
   bots.forEach((bot) => {
     bot.move(deltaTime);
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
     bot.draw(ctx);
   });
 

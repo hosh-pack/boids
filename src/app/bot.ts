@@ -59,8 +59,18 @@ class Bot {
 
   draw(ctx: CanvasRenderingContext2D) {
     ctx.fillStyle = this.color;
+    const perp = this.speed.getPerpendicular().multiply(4);
+    const middle = this.position;
+    const tip = this.position.add(this.speed.multiply(10));
+    const left = this.position.add(perp).add(this.speed.multiply(-2));
+    const right = this.position
+      .add(perp.multiply(-1))
+      .add(this.speed.multiply(-2));
     ctx.beginPath();
-    ctx.arc(this.position.x, this.position.y, DOT_RADIUS, 0, Math.PI * 2, true);
+    ctx.moveTo(middle.x, middle.y);
+    ctx.lineTo(left.x, left.y);
+    ctx.lineTo(tip.x, tip.y);
+    ctx.lineTo(right.x, right.y);
     ctx.closePath();
     ctx.fill();
   }

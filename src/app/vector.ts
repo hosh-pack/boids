@@ -24,6 +24,10 @@ class Vector {
   normalize(): Vector {
     return new Vector(this.x / this.norm, this.y / this.norm);
   }
+
+  getPerpendicular(): Vector {
+    return new Vector(this.y, -this.x);
+  }
 }
 
 export { Vector };
