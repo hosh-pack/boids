@@ -15,7 +15,7 @@ class Catcher {
     addEventListener('touchmove', (e) => {
       this.position = new Vector(e.touches[0].clientX, e.touches[0].clientY);
     });
-    addEventListener('touchend', (e) => {
+    addEventListener('touchend', () => {
       this.position = null;
     });
   }
