@@ -1,8 +1,10 @@
 {
-  "name": "ahoi",
-  "private": true,
+  "name": "boids-2d",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "author": "Andreas Kraus",
+  "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -12,5 +14,14 @@
     "prettier": "^3.2.5",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "keywords": [
+    "boids",
+    "flocking",
+    "canvas"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hosh-pack/boids.git"
   }
 }
